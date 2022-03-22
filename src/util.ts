@@ -1,5 +1,7 @@
+import { Message } from "/$/socket"
+
 export interface LocalStored {
-  username: string
+  chatHistory: Message[]
 }
 export function ls<L extends keyof LocalStored>(key: L): LocalStored[L] | null
 export function ls<L extends keyof LocalStored>(key: L, value: LocalStored[L]): void

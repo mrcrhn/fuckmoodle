@@ -16,7 +16,6 @@ const config: UserConfig = {
     },
   },
   build: {
-    sourcemap: "inline",
     target: `chrome96`,
     outDir: "dist",
     assetsDir: ".",

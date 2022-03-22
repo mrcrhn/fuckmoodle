@@ -5,8 +5,10 @@ export interface Message {
 
 export interface ServerToClientEvents {
   chatMessage: (message: Message) => void
+  reload: () => void
 }
 
 export interface ClientToServerEvents {
   sendMessage: (message: Message) => void
+  reload: () => void
 }
