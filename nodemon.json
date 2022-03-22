@@ -4,7 +4,7 @@
     "types"
   ],
   "ext": "ts, json",
-  "exec": "npx ts-node -r dotenv/config ./src/index.ts",
+  "exec": "node --loader ts-node/esm -r dotenv/config ./src/index.ts",
   "events": {
     "start": "node -e console.clear()"
   }

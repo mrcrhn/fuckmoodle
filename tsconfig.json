@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "module": "CommonJS",
+    "module": "ESNext",
     "sourceMap": false,
     "moduleResolution": "Node",
     "skipLibCheck": true,
@@ -12,24 +12,14 @@
 
     // Don't automatically include anything.
     // Only include `@types` packages that we need to import.
-    "types" : ["@types/node"],
+    "types": ["@types/node"],
 
     "baseUrl": ".",
     "paths": {
-      "/@/*": [
-        "./src/*"
-      ],
-      "/$/*": [
-        "../../types/*"
-      ]
+      "/@/*": ["./src/*"],
+      "/$/*": ["./types/*"]
     }
   },
-  "include": [
-    "src/**/*.ts",
-    "../../types/**/*.d.ts"
-  ],
-  "exclude": [
-    "**/*.spec.ts",
-    "**/*.test.ts"
-  ]
+  "include": ["src/**/*.ts", "types/**/*.ts"],
+  "exclude": ["**/*.spec.ts", "**/*.test.ts"]
 }
