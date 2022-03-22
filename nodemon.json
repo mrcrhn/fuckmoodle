@@ -6,6 +6,6 @@
   "ext": "ts, json",
   "exec": "node --loader ts-node/esm -r dotenv/config ./src/index.ts",
   "events": {
-    "start": "node -e console.clear()"
+    "start": "node -e \"console.clear()\""
   }
 }
